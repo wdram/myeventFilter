@@ -14,6 +14,7 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
+    bool eventFilter(QObject *obj, QEvent *event);
 
 private:
     Ui::Widget *ui;
